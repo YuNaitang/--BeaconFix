@@ -74,7 +74,7 @@ const PostsPage = {
                 />
             </div>
 
-            <el-dialog v-model="catVisible" title="动态分类管理" width="480px" @open="onCatDialogOpen">
+            <el-dialog v-model="catVisible" title="动态分类管理" width="480px" align-center @open="onCatDialogOpen">
                 <div style="display:flex;gap:8px;margin-bottom:16px;">
                     <el-input v-model="newCatName" placeholder="输入分类名称" @keyup.enter="addCat" />
                     <el-button type="primary" :disabled="!newCatName.trim()" @click="addCat">添加</el-button>

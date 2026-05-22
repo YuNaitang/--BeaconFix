@@ -1599,7 +1599,6 @@ html, body {
         --el-dialog-width: 92% !important;
         width: 92% !important;
         max-width: 92vw !important;
-        margin: 6vh auto !important;
         border-radius: var(--radius-md) !important;
     }
 

@@ -97,7 +97,7 @@ const UsersPage = {
                     @change="onPageChange"
                 />
             </div>
-            <el-dialog v-model="dialogVisible" :title="editId ? '编辑用户' : '新增用户'" width="480px" destroy-on-close @opened="onDialogOpened">
+            <el-dialog v-model="dialogVisible" :title="editId ? '编辑用户' : '新增用户'" width="480px" destroy-on-close align-center @opened="onDialogOpened">
                 <el-form v-if="dialogVisible" ref="formRef" :model="form" :rules="rules" label-width="90px" @submit.prevent>
                     <el-form-item label="用户名" prop="username">
                         <el-input v-model="form.username" :disabled="!!editId" autocomplete="off" />

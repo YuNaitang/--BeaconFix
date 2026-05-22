@@ -71,7 +71,7 @@ const GalleryPage = {
                 />
             </div>
 
-            <el-dialog v-model="uploadVisible" title="上传图片" width="520px" destroy-on-close>
+            <el-dialog v-model="uploadVisible" title="上传图片" width="520px" destroy-on-close align-center>
                 <el-form label-width="80px">
                     <el-form-item label="分类">
                         <el-select v-model="uploadForm.category_id" clearable placeholder="未分类" style="width: 100%;">
@@ -97,7 +97,7 @@ const GalleryPage = {
                 </template>
             </el-dialog>
 
-            <el-dialog v-model="editVisible" title="编辑图片" width="520px">
+            <el-dialog v-model="editVisible" title="编辑图片" width="520px" align-center>
                 <el-form label-width="80px">
                     <el-form-item label="分类">
                         <el-select v-model="editForm.category_id" clearable placeholder="未分类" style="width: 100%;">
@@ -120,7 +120,7 @@ const GalleryPage = {
                 </template>
             </el-dialog>
 
-            <el-dialog v-model="catVisible" title="分类管理" width="480px" @open="onCatDialogOpen">
+            <el-dialog v-model="catVisible" title="分类管理" width="480px" align-center @open="onCatDialogOpen">
                 <div style="display:flex;gap:8px;margin-bottom:16px;">
                     <el-input v-model="newCatName" placeholder="输入分类名称" @keyup.enter="addCat" />
                     <el-button type="primary" :disabled="!newCatName.trim()" @click="addCat">添加</el-button>

@@ -36,7 +36,7 @@ const AppHeader = {
                     </template>
                 </el-dropdown>
             </div>
-            <el-dialog v-model="pwdVisible" title="修改密码" :width="store.isMobile ? '90%' : '400px'" destroy-on-close @opened="onPwdDialogOpened">
+            <el-dialog v-model="pwdVisible" title="修改密码" :width="store.isMobile ? '90%' : '400px'" destroy-on-close align-center @opened="onPwdDialogOpened">
                 <el-form v-if="pwdVisible" ref="pwdFormRef" :model="pwdForm" :rules="pwdRules" label-width="90px" @submit.prevent>
                     <el-form-item label="当前密码" prop="old_password">
                         <el-input v-model="pwdForm.old_password" type="password" show-password autocomplete="off" />

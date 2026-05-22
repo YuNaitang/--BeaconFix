@@ -75,7 +75,7 @@ const ServersConfigPage = {
             </div>
 
             <!-- 添加/编辑对话框 -->
-            <el-dialog v-model="dialogVisible" :title="isEditing ? '编辑服务器' : '添加服务器'" width="520px">
+            <el-dialog v-model="dialogVisible" :title="isEditing ? '编辑服务器' : '添加服务器'" width="520px" align-center>
                 <el-form ref="formRef" :model="editForm" :rules="rules" label-width="120px">
                     <el-form-item label="服务器名称" prop="server_name">
                         <el-input v-model="editForm.server_name" placeholder="例如：生存服、小游戏服" />

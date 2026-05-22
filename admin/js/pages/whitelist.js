@@ -95,7 +95,7 @@ const WhitelistPage = {
                     @change="onPageChange"
                 />
             </div>
-            <el-dialog v-model="noteVisible" :title="noteAction === 'approve' ? '通过申请' : '拒绝申请'" width="420px">
+            <el-dialog v-model="noteVisible" :title="noteAction === 'approve' ? '通过申请' : '拒绝申请'" width="420px" align-center>
                 <el-input v-model="noteForm.admin_note" type="textarea" rows="3" placeholder="管理员备注（可选）" />
                 <template #footer>
                     <el-button @click="noteVisible = false">取消</el-button>
